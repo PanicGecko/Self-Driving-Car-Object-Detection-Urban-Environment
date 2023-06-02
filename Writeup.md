@@ -70,7 +70,14 @@ We can see that the loss is lower than the the default model. This could be beca
 
 #Test result
 
+Export the trained model: python experiments/exporter_main_v2.py --input_type image_tensor --pipeline_config_path experiments/reference/pipeline_new.config --trained_checkpoint_dir experiments/reference/ --output_directory experiments/reference/exported/
+
+Create an animation: python inference_video.py --labelmap_path label_map.pbtxt --model_path experiments/reference/exported/saved_model --tf_record_path /data/waymo/testing/segment-12200383401366682847_2552_140_2572_140_with_camera_labels.tfrecord --config_path experiments/reference/pipeline_new.config --output_path animation.gif
+
+#Result
+
 <img src="animation.gif" width=50% height=50%>
+
 
 
 
