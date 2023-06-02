@@ -76,7 +76,9 @@ Create an animation: python inference_video.py --labelmap_path label_map.pbtxt -
 
 #Result
 
-<img src="animation.gif" width=50% height=50%>
+<img src="images/gif_1.png" width=50% height=50%>
+<img src="images/gif_2.png" width=50% height=50%>
+<img src="images/gif_3.png" width=50% height=50%>
 
 
 
